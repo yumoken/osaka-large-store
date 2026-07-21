@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="難波・心斎橋周辺の約150坪、大型・空中階店舗候補を比較できるサイト" />
+  <meta property="og:title" content="OSAKA LARGE STORE — 難波・心斎橋の大型店舗探し" />
+  <meta property="og:description" content="約150坪。空中階も含めて、大阪ミナミの大型店舗候補を比較。" />
+  <meta property="og:image" content="./public/og-osaka-large-store.png" />
+  <title>OSAKA LARGE STORE — 難波・心斎橋の大型店舗探し</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#top" aria-label="ページ上部へ"><span>O</span> OSAKA LARGE STORE</a>
+    <nav><a href="#listings">候補物件</a><a href="#checklist">確認事項</a></nav>
+    <a class="header-cta" href="#portals">掲載元を見る <b>↗</b></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker">OSAKA MINAMI / LARGE TENANT FINDER</p>
+        <h1><span>150</span>坪から、<br>次の<span class="outline">繁盛店</span>を。</h1>
+        <p class="lead">難波・心斎橋を中心に、約120〜180坪の大型区画をピックアップ。空中階・複数フロアも含めて、出店判断に必要な条件を比較できます。</p>
+        <div class="hero-tags"><span>難波</span><span>心斎橋</span><span>空中階OK</span><span>約150坪</span></div>
+      </div>
+      <div class="hero-building" aria-hidden="true">
+        <div class="building-label"><small>TARGET SIZE</small><b>495<em>m²</em></b><span>≒ 150 TSUBO</span></div>
+        <div class="floor f4"><i>4F</i><strong>DINING</strong></div>
+        <div class="floor f3"><i>3F</i><strong>ENTERTAINMENT</strong></div>
+        <div class="floor f2"><i>2F</i><strong>RETAIL</strong></div>
+        <div class="floor f1"><i>1F</i><strong>ENTRANCE</strong></div>
+      </div>
+    </section>
+
+    <section class="condition-strip" aria-label="検索条件">
+      <div><small>AREA</small><strong>難波・心斎橋</strong></div>
+      <div><small>SIZE</small><strong>120〜180坪目安</strong></div>
+      <div><small>FLOOR</small><strong>空中階も可</strong></div>
+      <div><small>USE</small><strong>店舗・飲食は要確認</strong></div>
+    </section>
+
+    <section class="listings" id="listings">
+      <div class="section-head">
+        <div><p class="kicker">CURRENT SHORTLIST</p><h2>現在の候補物件</h2></div>
+        <p class="count"><b id="resultCount">6</b><span>件を表示</span></p>
+      </div>
+
+      <div class="filter-bar" id="filters">
+        <label><span>エリア</span><select id="area"><option value="all">すべて</option><option value="心斎橋">心斎橋</option><option value="難波">難波</option><option value="日本橋">日本橋</option></select></label>
+        <label><span>面積</span><select id="size"><option value="all">すべて</option><option value="exact">120〜180坪</option><option value="near">60〜120坪</option></select></label>
+        <label><span>階タイプ</span><select id="floor"><option value="all">すべて</option><option value="upper">空中階</option><option value="ground">路面・低層</option></select></label>
+        <label class="toggle"><input id="food" type="checkbox"><i></i><span>飲食相談可を優先</span></label>
+        <button id="reset" type="button">条件をリセット</button>
+      </div>
+
+      <div class="property-grid" id="propertyGrid"></div>
+      <div class="empty" id="empty" hidden><b>該当候補がありません</b><span>条件を広げてお試しください。</span></div>
+      <p class="notice">掲載内容は2026年7月21日に確認した公開情報の要約です。空室状況、飲食可否、排気・給排水・ガス容量、賃料等は変わるため、必ず掲載元へお問い合わせください。</p>
+    </section>
+
+    <section class="feature" id="checklist">
+      <div class="feature-title">
+        <p class="kicker">UPPER-FLOOR CHECKLIST</p>
+        <h2>空中店舗は、<br><span>動線</span>で決まる。</h2>
+        <p>150坪級では「入れる」だけでなく、ピーク時に人と料理が滞留しないことが重要です。内見前に最低限この6点を確認します。</p>
+      </div>
+      <ol>
+        <li><b>01</b><div><strong>EVの台数・定員</strong><span>来客用と搬入用を分離できるか</span></div></li>
+        <li><b>02</b><div><strong>避難経路・階段幅</strong><span>想定席数で消防要件を満たせるか</span></div></li>
+        <li><b>03</b><div><strong>排気ルート</strong><span>屋上までダクトを通せるか</span></div></li>
+        <li><b>04</b><div><strong>給排水・ガス容量</strong><span>大型厨房の必要容量に届くか</span></div></li>
+        <li><b>05</b><div><strong>サイン視認性</strong><span>1階から店の存在を伝えられるか</span></div></li>
+        <li><b>06</b><div><strong>床荷重・天井高</strong><span>厨房機器と空間演出に耐えられるか</span></div></li>
+      </ol>
+    </section>
+
+    <section class="market">
+      <div><p class="kicker">MARKET NOTE</p><h2>路面にこだわらないと、<br>選択肢は大きく広がる。</h2></div>
+      <div class="market-card"><span>心斎橋・1F以外の募集賃料水準</span><b>約 <em>17,500</em> 円</b><small>月・坪あたり / 2025年下期の調査値</small></div>
+      <p>150坪換算では単純計算で月額約262.5万円が一つの目安です。実際の大型区画は個別条件・共益費・保証金・工事負担を含めて比較してください。</p>
+    </section>
+
+    <section class="portals" id="portals">
+      <div><p class="kicker">KEEP SEARCHING</p><h2>最新募集を探す</h2><p>大型区画は非公開募集も多いため、公開サイトと仲介会社への直接相談を併用するのがおすすめです。</p></div>
+      <div class="portal-links">
+        <a href="https://www.office-navi.jp/" target="_blank" rel="noreferrer"><span><b>オフィスナビ</b><small>大型・セット区画を検索</small></span><i>↗</i></a>
+        <a href="https://www.inshokuten.com/bukken/kansai/" target="_blank" rel="noreferrer"><span><b>飲食店ドットコム</b><small>飲食可の店舗物件を検索</small></span><i>↗</i></a>
+        <a href="https://www.cbre-propertysearch.jp/retail/" target="_blank" rel="noreferrer"><span><b>CBRE</b><small>大型リテール区画を検索</small></span><i>↗</i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#top"><span>O</span> OSAKA LARGE STORE</a><p>難波・心斎橋の大型店舗探しを、ひと目で。</p><small>© 2026 OSAKA LARGE STORE</small></footer>
+  <script src="./script.js"></script>
+</body>
+</html>
