@@ -3,3 +3,22 @@ node_modules/
 dist/
 .wrangler/
 .DS_Store
+
+# Local Sites preview scaffold (GitHub Pages uses the static root files)
+.openai/
+.vinext/
+app/
+build/
+db/
+drizzle/
+examples/
+tests/
+worker/
+drizzle.config.ts
+eslint.config.mjs
+next.config.ts
+package-lock.json
+package.json
+postcss.config.mjs
+tsconfig.json
+vite.config.ts
