@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="難波・心斎橋周辺の100〜150坪・飲食可物件を、6つの掲載サイトで照合した検索サイト" />
+  <meta name="description" content="難波・心斎橋周辺の50〜150坪・飲食可物件を、7つの掲載サイトから集めた検索サイト" />
   <meta property="og:title" content="OSAKA LARGE STORE — 難波・心斎橋の大型店舗探し" />
-  <meta property="og:description" content="100〜150坪・飲食可だけ。6つの掲載サイトで大阪ミナミの募集を照合。" />
+  <meta property="og:description" content="50〜150坪・飲食可だけ。7つの掲載サイトから大阪ミナミの募集を収集。" />
   <meta property="og:image" content="./public/og-osaka-large-store.png" />
   <title>OSAKA LARGE STORE — 難波・心斎橋の大型店舗探し</title>
-  <link rel="stylesheet" href="./style.css?v=20260722-2" />
+  <link rel="stylesheet" href="./style.css?v=20260722-3" />
 </head>
 <body>
   <header class="header">
@@ -21,9 +21,9 @@
     <section class="hero">
       <div class="hero-copy">
         <p class="kicker">OSAKA MINAMI / LARGE TENANT FINDER</p>
-        <h1><span>100〜150</span>坪で、<br>次の<span class="outline">繁盛店</span>を。</h1>
-        <p class="lead">難波・心斎橋を中心に、100〜150坪かつ飲食可能と確認できる募集だけを収集。同じ募集を6つの掲載サイトで照合しました。</p>
-        <div class="hero-tags"><span>100〜150坪</span><span>飲食可のみ</span><span>6サイト照合</span><span>空中階OK</span></div>
+        <h1><span>50〜150</span>坪で、<br>次の<span class="outline">繁盛店</span>を。</h1>
+        <p class="lead">難波・心斎橋を中心に、50〜150坪かつ飲食可能と確認できる募集だけを収集。7つの掲載サイトから候補をまとめました。</p>
+        <div class="hero-tags"><span>50〜150坪</span><span>飲食可のみ</span><span>7サイト調査</span><span>空中階OK</span></div>
       </div>
       <div class="hero-building" aria-hidden="true">
         <div class="building-label"><small>TARGET SIZE</small><b>495<em>m²</em></b><span>≒ 150 TSUBO</span></div>
@@ -36,29 +36,29 @@
 
     <section class="condition-strip" aria-label="検索条件">
       <div><small>AREA</small><strong>難波・心斎橋</strong></div>
-      <div><small>SIZE</small><strong>100〜150坪限定</strong></div>
+      <div><small>SIZE</small><strong>50〜150坪限定</strong></div>
       <div><small>FLOOR</small><strong>空中階も可</strong></div>
-      <div><small>SOURCES</small><strong>6サイトで照合</strong></div>
+      <div><small>SOURCES</small><strong>7サイトから収集</strong></div>
     </section>
 
     <section class="listings" id="listings">
       <div class="section-head">
         <div><p class="kicker">CURRENT SHORTLIST</p><h2>現在の候補物件</h2></div>
-        <p class="count"><b id="resultCount">1</b><span>件を表示</span></p>
+        <p class="count"><b id="resultCount">5</b><span>件を表示</span></p>
       </div>
 
       <div class="filter-bar" id="filters">
         <label><span>エリア</span><select id="area"><option value="all">すべて</option><option value="心斎橋">心斎橋</option><option value="難波">難波</option><option value="日本橋">日本橋</option></select></label>
-        <label><span>面積</span><select id="size"><option value="target">100〜150坪</option></select></label>
+        <label><span>面積</span><select id="size"><option value="target">50〜150坪</option></select></label>
         <label><span>階タイプ</span><select id="floor"><option value="all">すべて</option><option value="upper">空中階</option><option value="ground">路面・低層</option></select></label>
-        <label><span>掲載元</span><select id="source"><option value="all">6サイトすべて</option></select></label>
+        <label><span>掲載元</span><select id="source"><option value="all">7サイトすべて</option></select></label>
         <label class="toggle"><input id="food" type="checkbox"><i></i><span>重飲食対応のみ</span></label>
         <button id="reset" type="button">条件をリセット</button>
       </div>
 
       <div class="property-grid" id="propertyGrid"></div>
       <div class="empty" id="empty" hidden><b>該当候補がありません</b><span>条件を広げてお試しください。</span></div>
-      <p class="notice">掲載内容は2026年7月22日に確認した公開情報の要約です。条件一致は現在1物件です。同一募集を複数サイトで確認しているため、物件数は重複計上していません。空室状況や対応業態、朝食提供条件、排気・給排水・電気容量は必ず掲載元へお問い合わせください。</p>
+      <p class="notice">掲載内容は2026年7月22日に確認した公開情報の要約です。50〜150坪の条件一致は現在5物件です。同一募集を複数サイトで確認した場合も、物件数は重複計上していません。空室状況や対応業態、排気・給排水・ガス・電気容量は必ず掲載元へお問い合わせください。</p>
     </section>
 
     <section class="feature" id="checklist">
@@ -84,7 +84,7 @@
     </section>
 
     <section class="portals" id="portals">
-      <div><p class="kicker">6 SOURCES</p><h2>同じ募集を確認したサイト</h2><p>物件概要・面積・飲食用途を6サイトで照合しました。大型区画は非公開募集も多いため、各社への直接相談もおすすめです。</p></div>
+      <div><p class="kicker">7 SOURCES</p><h2>調査した掲載サイト</h2><p>50〜150坪の物件概要・面積・飲食用途を7サイトから確認しました。大型区画は非公開募集も多いため、各社への直接相談もおすすめです。</p></div>
       <div class="portal-links">
         <a href="https://www.inshokuten.com/bukken/kansai/" target="_blank" rel="noreferrer"><span><b>飲食店ドットコム</b><small>飲食可の店舗物件を検索</small></span><i>↗</i></a>
         <a href="https://osaka-kashitenpo.jp/" target="_blank" rel="noreferrer"><span><b>大阪貸店舗プラス</b><small>重飲食向き・大型区画</small></span><i>↗</i></a>
@@ -92,11 +92,12 @@
         <a href="https://www.kashijimusho4600.com/" target="_blank" rel="noreferrer"><span><b>貸ビル情報</b><small>119.79坪の区画情報</small></span><i>↗</i></a>
         <a href="https://www.temposmart.jp/" target="_blank" rel="noreferrer"><span><b>テンポスマート</b><small>レストラン居抜き情報</small></span><i>↗</i></a>
         <a href="https://www.tokyo-capital.com/service/vacancy/" target="_blank" rel="noreferrer"><span><b>東京キャピタルマネジメント</b><small>管理会社の募集情報</small></span><i>↗</i></a>
+        <a href="https://www.kashijimusho-labo.jp/" target="_blank" rel="noreferrer"><span><b>貸事務所ラボ</b><small>難波の重飲食・空中店舗</small></span><i>↗</i></a>
       </div>
     </section>
   </main>
 
   <footer><a class="logo" href="#top"><span>O</span> OSAKA LARGE STORE</a><p>難波・心斎橋の大型店舗探しを、ひと目で。</p><small>© 2026 OSAKA LARGE STORE</small></footer>
-  <script src="./script.js?v=20260722-2"></script>
+  <script src="./script.js?v=20260722-3"></script>
 </body>
 </html>
